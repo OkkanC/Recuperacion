@@ -47,6 +47,8 @@ switch(opcion){
         }      
     
     case 2 -> TablaVector.mostrarTodosLosDatos();
+    
+    case 3 -> TablaVector.departamentoPorNombre();
    
     default -> System.out.println("No es una opción válida");
     

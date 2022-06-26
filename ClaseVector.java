@@ -59,4 +59,32 @@ public class ClaseVector {
             System.out.println(repeticion.getMessage());       
         }
     }
+    
+     public void departamentoPorNombre(){
+        
+        int contador=-1;
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.print("\nIngresa el Departamento que Quieres Buscar: "); String nombre=entrada.next();
+        for (int i=0; i<tablaDepartamento.length;i++){
+            
+            if(tablaDepartamento[i] == null ? nombre == null : tablaDepartamento[i].equals(nombre)){
+            contador=i;
+            }
+        }
+        
+        if(contador==-1){
+        System.out.println("\n");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");
+        System.out.println("| El Departamento NO ha sido Ingresado.|");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");
+        
+        }else{
+        System.out.println("\n");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");
+        System.out.println("| El Departamento SÍ está Ingresado, se encuentra en la Posición ["+contador+"] |");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-");
+        } 
+
+      }
 }
