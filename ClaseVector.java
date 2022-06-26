@@ -140,4 +140,24 @@ public class ClaseVector {
             }
         } System.out.println("\n.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-."); 
     }
+    
+    void departamentoPorCabecera() {
+        
+        String VariableDepartamento,texto="";        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("\n");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");
+        System.out.print("Ingrese el Nombre del Departamento para conocer su Cabecera: "); VariableDepartamento= entrada.next();
+        
+        for (int i=0; i<tablaDepartamento.length;i++){
+            
+            if(tablaDepartamento[i] == null ? VariableDepartamento == null : tablaDepartamento[i].contains(VariableDepartamento)){
+            texto+="El departamento: "+VariableDepartamento+" le corresponde la cabecera: "+Cabecera[i];
+            }else{}
+        }
+        
+        System.out.println(texto);
+        System.out.println("(Si Aparece en Blanco es Porque NO se ha ingresado Un Departamento con Dicho Nombre)");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-."); 
+    }
 }

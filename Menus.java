@@ -26,9 +26,9 @@ System.out.println("| 1. Ingresar Departamento                                  
 System.out.println("| 2. Mostrar Todos los Departamentos Ingresados                                            |");
 System.out.println("| 3. Buscar Departamento por Nombre e Indicar su Posicion                                  |");
 System.out.println("| 4. Buscar Departamento por su Inicial                                                    |");
-System.out.println("| 5. Buscar Departamentos registrados en una posición par y que tenga más de 4 municipios) |");
-System.out.println("| 6. Mostrar Cabecera del Departamento ingresado                                           |");
-System.out.println("| 7. Mostrar los Departamentos ingresados en las posiciones impares del vector             |");
+System.out.println("| 5. Buscar Departamentos Registrados en una posición Par y que tenga más de 4 municipios) |");
+System.out.println("| 6. Mostrar Cabecera del Departamento Ingresado                                           |");
+System.out.println("| 7. Mostrar los Departamentos Ingresados en las Posiciones Impares del Vector             |");
 System.out.println("| 0. Salir                                                                                 |");
 System.out.println("--------------------------------------------------------------------------------------------");
 System.out.print("Ingresa el número de la opción que quieras utilizar: "); opcion=entrada.nextInt();
@@ -53,6 +53,8 @@ switch(opcion){
     case 4 -> TablaVector.departamentoPorInicial();
     
     case 5 -> TablaVector.mostrarEnPar();
+    
+    case 6 -> TablaVector.departamentoPorCabecera();
     
     case 7 -> TablaVector.mostrarEnImpar();
    
