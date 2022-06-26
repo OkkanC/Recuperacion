@@ -125,4 +125,19 @@ public class ClaseVector {
         }
        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");  
     }
+    
+    void mostrarEnImpar() {
+   
+       System.out.print("\nLos departamentos en las posiciones impares son: "); 
+       System.out.println("\n.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.\n"); 
+        for (int i=0; i<tablaDepartamento.length;i++){
+            
+            if(i%2 !=0){
+             
+                if(Municipio[i]>0){
+                  System.out.println(tablaDepartamento[i]);
+                }
+            }
+        } System.out.println("\n.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-."); 
+    }
 }

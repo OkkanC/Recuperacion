@@ -53,6 +53,8 @@ switch(opcion){
     case 4 -> TablaVector.departamentoPorInicial();
     
     case 5 -> TablaVector.mostrarEnPar();
+    
+    case 7 -> TablaVector.mostrarEnImpar();
    
     default -> System.out.println("No es una opción válida");
     
