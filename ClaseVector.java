@@ -87,4 +87,24 @@ public class ClaseVector {
         } 
 
       }
+     
+     public void departamentoPorInicial(){
+        String inicial ,texto="";        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("\n");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");
+        System.out.print("Ingrese la Inicial del Departamento que Quiere Buscar: "); inicial = entrada.next();
+        
+        for (int i=0; i<tablaDepartamento.length;i++){
+            
+            if(tablaDepartamento[i] == null ? inicial == null : tablaDepartamento[i].contains(inicial))
+            {
+            texto+="La Inicial: "+inicial+". Pertenece a: "+tablaDepartamento[i];
+            }else{}
+        } 
+ 
+        System.out.println(texto);
+        System.out.println("Si Aparece en Blanco es Porque NO se ha Ingresado Un Departamento con Dicha Inicial");
+        System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
+    }
 }
