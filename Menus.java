@@ -51,6 +51,8 @@ switch(opcion){
     case 3 -> TablaVector.departamentoPorNombre();
     
     case 4 -> TablaVector.departamentoPorInicial();
+    
+    case 5 -> TablaVector.mostrarEnPar();
    
     default -> System.out.println("No es una opción válida");
     

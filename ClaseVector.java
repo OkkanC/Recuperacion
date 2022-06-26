@@ -88,7 +88,7 @@ public class ClaseVector {
 
       }
      
-     public void departamentoPorInicial(){
+    public void departamentoPorInicial(){
         String inicial ,texto="";        
         Scanner entrada = new Scanner(System.in);
         System.out.println("\n");
@@ -106,5 +106,23 @@ public class ClaseVector {
         System.out.println(texto);
         System.out.println("Si Aparece en Blanco es Porque NO se ha Ingresado Un Departamento con Dicha Inicial");
         System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-");
+    }
+   
+    public void mostrarEnPar(){
+     
+       try{     
+        for(int i=0; i<10;i++){
+           
+         if(Municipio[i]>4)
+            
+            if(i%2==0){
+             System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.");  
+             System.out.println("Los Departamentos que Tienen más de 4 Municipios son: "+tablaDepartamento[i]);
+            }
+        }
+       }catch(Exception repeticion){
+            System.out.println(repeticion.getMessage());
+        }
+       System.out.println(".-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");  
     }
 }
