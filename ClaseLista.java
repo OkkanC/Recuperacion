@@ -28,7 +28,7 @@ public class ClaseLista {
      
    }
 
-   public void mostrarDepartamentos(){
+    public void mostrarDepartamentos(){
    
         for(int i=0;i<TablasDeListas.size();i++){
           
@@ -39,6 +39,24 @@ public class ClaseLista {
           System.out.println("  Cabecera: "+TablasDeListas.get(i).getCabecera());
           System.out.println("  Región: "+TablasDeListas.get(i).getRegion());
           System.out.println("-----------------------------------------------");
-      }
-   }
+        }
+    }
+   
+    public void buscarDepartamentoPorNombre(){
+      
+      System.out.println("\n\n..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..--..--..--..");   
+        for(int i=0;i<TablasDeListas.size();i++){
+          
+          System.out.print("Ingrese el Nombre del Departamento que Quiere Buscar: "); String BuscarDepartamento = entrada.next();
+          boolean siEsta = TablasDeListas.get(i).getNombre().contains(BuscarDepartamento); 
+          
+          if (siEsta){
+          System.out.println("El Departamento Buscado YA Ha Sido Ingresado");
+          }else{
+          System.out.println("El Departamento Buscado NO Ha Sido Ingresado");}
+          
+          break;  
+        }
+        System.out.println("..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..--..--..--..\n");
+    }
 }
