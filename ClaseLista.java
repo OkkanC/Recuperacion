@@ -59,4 +59,31 @@ public class ClaseLista {
         }
         System.out.println("..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..--..--..--..\n");
     }
+    
+    public void buscarDepartamentoPorPosicion(){
+        Scanner entrada= new Scanner(System.in);
+        
+        try{
+            int contador= -1;
+            System.out.println("\n\n..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-.-..-..-..-..-..-..--..--..");   
+             
+            for(int i=0;i<TablasDeListas.size();i++){
+              contador=i;
+              System.out.print("Ingrese el Indice del Departamento que Quiere Buscar (Receurde que la posición inicial es 0): "); 
+              String indice = entrada.next();
+              boolean siEsta = TablasDeListas.get(i).equals(Integer.parseInt(indice)); 
+         
+                if (siEsta){
+                System.out.println("El Departamento NO Ha Sido Ingresado");
+                }else{
+                System.out.println("| El Departamento en el Indice ["+contador+"] de la lista es: "+TablasDeListas.get(contador).getNombre());
+                }
+
+                break;  
+            }
+            System.out.println("..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..-..--..-..-..--..-..-..--..-..-..--..-..-..--..--..\n");
+        }catch(NumberFormatException repeticion){
+            System.out.println(repeticion.getMessage());
+        }
+    }
 }

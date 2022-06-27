@@ -91,6 +91,8 @@ public class Menus{
         case 2 -> TablaLista.mostrarDepartamentos();
         
         case 3 -> TablaLista.buscarDepartamentoPorNombre();
+        
+        case 4 -> TablaLista.buscarDepartamentoPorPosicion();
 
         default -> System.out.println("No es una opción válida");
 
